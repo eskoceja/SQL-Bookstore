@@ -99,8 +99,8 @@ SELECT * FROM Books;<br>
 Learning: I have come to realization that using the command like would be trying to code in a notepad when 
 using SQL, thanks, Sher! I am now more confident in using the SQL Editor to run commands to reach a desired 
 outcome. I had to do more research on getting the commands to modify the data, and I am glad I got to 
-practice retieving data using SELECT, FROM, WHERE and update data using UPDATE, SET, WHERE. I use the SELECT
-* FROM Books after each command to make sure the data is being updated. I also learned how to make comments 
-* on SQL Editor to help me go back to certain commands and see if I made mistakes. 
+practice retieving data using SELECT, FROM, WHERE and update data using UPDATE, SET, WHERE. I use the 
+SELECT * FROM Books after each command to make sure the data is being updated. I also learned how to make 
+comments on SQL Editor to help me go back to certain commands and see if I made mistakes. 
 
 
