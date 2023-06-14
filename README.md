@@ -1,7 +1,7 @@
 # SQL-Bookstore
 Using SQL 
 
-SQL Queries:
+SQL Queries: <br>
 
 CREATE DATABASE Bookstore;
 
