@@ -14,14 +14,14 @@ CREATE TABLE Books (
     Price REAL
 );<br>
 
-INSERT INTO Books (Title, Author, PublicationYear, Price) VALUES
-    ('1','To Kill A Mockingbird', 'Harper Lee', 1960, 12.99),
-    ('2','1984', 'George Orwell', 1929, 9.99),
-    ('3','Pride and Prejudice', 'Jane Austen', 1813, 8.99),
-    ('4','A Court of Thorns and Roses', 'Sarah J Maas', 2015, 10.99),
-    ('5','A Court of Mist and Fury', 'Sarah J Maas', 2016, 12.99),
-    ('6','A Court of Wings and Ruin', 'Sarah J Maas, 2017, 14.99),
-    ('7','A Court of Frost and Starlight', 'Sarah J Maas', 2018, 9.99),
+INSERT INTO Books (Title, Author, PublicationYear, Price) VALUES<br>
+    ('1','To Kill A Mockingbird', 'Harper Lee', 1960, 12.99),<br>
+    ('2','1984', 'George Orwell', 1929, 9.99),<br>
+    ('3','Pride and Prejudice', 'Jane Austen', 1813, 8.99),<br>
+    ('4','A Court of Thorns and Roses', 'Sarah J Maas', 2015, 10.99),<br>
+    ('5','A Court of Mist and Fury', 'Sarah J Maas', 2016, 12.99),<br>
+    ('6','A Court of Wings and Ruin', 'Sarah J Maas, 2017, 14.99),<br>
+    ('7','A Court of Frost and Starlight', 'Sarah J Maas', 2018, 9.99),<br>
     ('8','A Court of Silver Flames', 'Sarah J Maas', 2021, 16.99); <br>
     
   SELECT * FROM Books;<br>
