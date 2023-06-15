@@ -103,4 +103,77 @@ practice retieving data using SELECT, FROM, WHERE and update data using UPDATE, 
 SELECT * FROM Books after each command to make sure the data is being updated. I also learned how to make 
 comments on SQL Editor to help me go back to certain commands and see if I made mistakes. 
 
+------------------------------------------------------------------------------------------------------<br>
 
+PART 3: Mastering Advanced SQL CONCEPTS<br>
+<br>
+SQL QUERIES:<br>
+<br>
+--1: SUBQUERY PRACTICE<br>
+<br>
+--retrieve books that have a higher price than the avg (must get avg first-- use subqueries?)<br>
+<br>
+-- AVG: SELECT AVG(Price) AS AveragePrice FROM Books; (15.14)<br>
+<br>
+SELECT * <br>
+FROM Books<br>
+WHERE Price > (SELECT AVG(Price) FROM Books);<br>
+<br>
+--Find the 'BookID' of the book(s) with the highest 'TotalPrice' in the 'Sales' table.<br>
+<br>
+SELECT BookID<br>
+FROM Sales<br>
+WHERE TotalPrice = (SELECT MAX(TotalPrice) FROM Sales);<br>
+<br>
+--2: AGGREGATION PRACTICE<br>
+<br>
+--Find the total number of books sold.<br>
+<br>
+SELECT SUM(Quantity) <br>
+FROM Sales;<br>
+<br>
+--Calculate the total revenue from book sales.<br>
+<br>
+SELECT SUM(TotalPrice)<br>
+FROM Sales;<br>
+<br>
+--Find the average, minimum, and maximum book price.<br>
+<br>
+SELECT <br>
+AVG(Price),<br>
+MIN(Price),<br>
+MAX(Price)<br>
+FROM Books;<br>
+<br>
+--Group by 'Author' and count the number of books per author.<br>
+<br>
+SELECT Author, COUNT(*)<br>
+FROM Books<br>
+GROUP BY Author;<br>
+<br>
+--3: JOIN PRACTICE<br>
+<br>
+--Using an INNER JOIN, retrieve all records of books and their corresponding sales.<br>
+<br>
+SELECT *<br>
+FROM Books<br>
+INNER JOIN Sales<br>
+ON Books.BookID = Sales.BookID;<br>
+<br>
+--Using a LEFT JOIN, retrieve all books, and display sales records where available.<br>
+<br>
+SELECT *<br>
+FROM Books<br>
+LEFT JOIN Sales<br>
+ON Books.BookID = Sales.BookID;<br>
+<br>
+--Using a RIGHT JOIN, retrieve all sales, and display book information where available.<br>
+<br>
+SELECT *<br>
+FROM Sales<br>
+RIGHT JOIN Books<br>
+ON Sales.BookID = Books.BookID;<br>
+<br>
+<br>
+LEARNING: <br>
+The most helpful tool for me through this assignment: [W3 Schools SQL Tutorial](https://www.w3schools.com/sql/default.asp) 
